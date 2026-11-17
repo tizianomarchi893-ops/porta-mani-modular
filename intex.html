@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visor 3D y Realidad Aumentada</title>
+  <title>Visor 3D - Modelo 1</title>
   <!-- Carga de la librería oficial de Google model-viewer -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
   <style>
@@ -39,16 +39,19 @@
 </head>
 <body>
 
-  <!-- Componente con las rutas exactas de tus archivos -->
+  <!-- Componente configurado para modelo1 -->
   <model-viewer 
     src="modelo1.glb" 
     ios-src="modelo1.usdz"
+    scale="0.001 0.001 0.001"
     ar 
     ar-modes="webxr scene-viewer quick-look" 
     camera-controls 
-    tone-mapping="commerce" 
+    tone-mapping="commerce"
+    environment-image="neutral"
+    exposure="0.8"
     shadow-intensity="1"
-    alt="Modelo 3D Interactivo">
+    alt="Modelo 3D Interactivo 1">
     
     <button slot="ar-button" id="ar-button">
       📷 Ver en Realidad Aumentada
